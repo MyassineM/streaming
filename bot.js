@@ -1,6 +1,6 @@
 const discord_token = "NDI4NTgyNTYwNDQwNzc4NzU3.DtLaxA.FfAcWG28LPQO26vLr7LK64nFoA4";
 const prefix = "!"
-client.login(discord_token);
+client.login(process.env.BOT_TOKEN);
 client.on('message', message => {
   if (!message.content.startsWith(prefix)) return;
   var args = message.content.split(' ').slice(1);
